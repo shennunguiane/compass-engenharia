@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with = device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Compas Engenharia Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&dispaly=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href = "index.html"><img src = "images/Compass-engenharia-icon.jpg"></a>
+                <div class = "nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>                        
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="estagios.html">Estágios</a></li>                        
+                        <li><a href="contacto.html">Contactos</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"  onclick="showMenu()"></i>
+            </nav>
+            <h1>Sobre Nós</h1>      
+        </section>
+        <!-----------  Sobre nós conteúdo  ----------->
+        <section class="sobre-nos">
+            <div class="row">
+                <div class="sobre-col">
+                    <h1>Quem somos nós</h1>
+                    <p>
+                        Empresa de referência e de melhor opção que responde as necessidades da sociedade de forma moderna, efeciente, competitiva e orientada ao mercado. 
+                    </p>
+                    <a href="servicos.html" class="hero-btn red-btn">Explore mais</a>
+                </div>
+                <div class="sobre-col">
+                    <img src="images/about.jpg">
+                </div>
+            </div>
+        </section>
+        <!-----------  footer ----------->
+        <section class="footer">
+            <h4>Sobre Nós</h4>
+            <p>
+                Empresa de referência e de melhor opção que responde as necessidades da sociedade 
+                <br>de forma moderna, efeciente, competitiva e orientada ao mercado. 
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-copyright"></i>Compass Engenharia</p>
+        </section>
+        <!-----------  Javascript code --------->  
+        <script>
+            var navLinks = document.getElementById("navlinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

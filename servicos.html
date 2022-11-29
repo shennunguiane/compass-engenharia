@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with = device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Compas Engenharia Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&dispaly=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href = "index.html"><img src = "images/Compass-engenharia-icon.jpg"></a>
+                <div class = "nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>                        
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="estagios.html">Estágios</a></li>                        
+                        <li><a href="contacto.html">Contactos</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"  onclick="showMenu()"></i>
+            </nav>
+            <h1>Serviços</h1>      
+        </section>
+        <!-----------  Serviços ----------->
+        <section class="servicos">
+            <h1>Nossos Serviços</h1>
+            <p>Fornecemos os seguintes Serviços para nossos Clientes</p>
+
+            <div class="row">
+                <div class="servicos-col">
+                    <h3>Construção</h3>
+                    <p>Escavação para fundação, Alvenaria de vedação e estrutural, Concretagem e Acabamentos e revestimentos.</p>
+                </div>
+                <div class="servicos-col">
+                    <h3>Softwares</h3>
+                    <p> Apoiar projectos de concepção e desenvolvimento de aplicações, incluindo estudos de viabilidade económica de pequenas dimensões.</p>
+                </div>
+                <div class="servicos-col">
+                    <h3>Equipamentos de Proteção Individual</h3>
+                    <p>Proteção da cabeça;
+                        Proteção visual e facial;
+                        Proteção auditiva;
+                        Proteção respiratória;
+                        Proteção de mãos e braços;
+                        Proteção de pernas e pés;
+                        Proteção contra quedas.</p>
+                </div>
+            </div>
+        </section>
+        <!-----------  Actividades ----------->
+        <section class="actividades">
+            <h1>Nossas Actividades</h1>
+            <p>Com foco na implementação de soluções às necessidades da sociedade temos como actividades</p>
+            <div class="row">
+                <div class="actividades-col">
+                    <img src="images/construcao-civil.jpg">
+                    <h3>Investigação</h3>
+                    <p>Com foco na implementação de soluções às necessidades da sociedade</p>
+                </div>
+                <div class="actividades-col">
+                    <img src="images/informatica.jpg">
+                    <h3>Investigação</h3>
+                    <p>Com foco na implementação de soluções às necessidades da sociedade</p>
+                </div>
+                <div class="actividades-col">
+                    <img src="images/electrica.jpg">
+                    <h3>Investigação</h3>
+                    <p>Com foco na implementação de soluções às necessidades da sociedade</p>
+                </div>
+            </div>
+        </section>
+        <!-----------  footer ----------->
+        <section class="footer">
+            <h4>Sobre Nós</h4>
+            <p>
+                Empresa de referência e de melhor opção que responde as necessidades da sociedade 
+                <br>de forma moderna, efeciente, competitiva e orientada ao mercado. 
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-copyright"></i>Compass Engenharia</p>
+        </section>
+        <!-----------  Javascript code --------->  
+        <script>
+            var navLinks = document.getElementById("navlinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

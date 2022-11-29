@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with = device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Compas Engenharia Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&dispaly=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href = "index.html"><img src = "images/Compass-engenharia-icon.jpg"></a>
+                <div class = "nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>                        
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="estagios.html">Estágios</a></li>                        
+                        <li><a href="contacto.html">Contactos</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"  onclick="showMenu()"></i>
+            </nav>
+            <h1>Contacte-nos</h1>      
+        </section>
+
+         <!-----------  Contacte-nos  ----------->
+         <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.954557539806!2d32.58104311568869!3d-25.936716838666143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee69a60569da95d%3A0xa08cb2f2c171c860!2sAvenida%20Milagre%20Mabote%2C%20Maputo!5e0!3m2!1spt-PT!2smz!4v1669567716120!5m2!1spt-PT!2smz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </section>
+
+         <section class="contacte-nos">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5> Cidade de Maputo</h5>
+                            <p>Avenida Milagre Mabote, Bairro Maxaquene B, Número 25</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>(+258) 866219916/867801248</h5>
+                            <p>Segunda á Sábado, 08 ás 17 Horas</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-whatsapp"></i>
+                        <span>
+                            <h5>(+258) 866219916</h5>
+                            <p>WhatsApp</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>compasseng@gmail.com</h5>
+                            <p>Faça-nos um Email</p>
+                        </span>
+                    </div>  
+                </div>
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="text" name="email" placeholder="Email" required>
+                        <input type="text" name="assunto" placeholder="Assunto" required>
+                        <textarea rows="8" placeholder="Mensagem" name="mensagem" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+         </section>
+        <!-----------  footer ----------->
+        <section class="footer">
+            <h4>Sobre Nós</h4>
+            <p>
+                Empresa de referência e de melhor opção que responde as necessidades da sociedade 
+                <br>de forma moderna, efeciente, competitiva e orientada ao mercado. 
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-copyright"></i>Compass Engenharia</p>
+        </section>
+        <!-----------  Javascript code --------->  
+        <script>
+            var navLinks = document.getElementById("navlinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

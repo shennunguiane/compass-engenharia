@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with = device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Compas Engenharia Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&dispaly=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href = "index.html"><img src = "images/Compass-engenharia-icon.jpg"></a>
+                <div class = "nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>                        
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="estagios.html">Estágios</a></li>                        
+                        <li><a href="contacto.html">Contactos</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars"  onclick="showMenu()"></i>
+            </nav>
+            <h1>Estágios</h1>      
+        </section>
+        <!-----------  Estágio conteúdo ----------->
+        <section class="estagio-content">
+
+            <div class="row">
+                <div class="estagio-left">
+                    <img src="images/certificate.jpg">
+                    <h2>Com os estágios os estudantes graduam com experiência prática</h2>
+                    <p>
+                        Escavação para fundação, Alvenaria de vedação e estrutural, Concretagem e Acabamentos e revestimentos.
+                    </p>
+                    <br>
+                    <p>
+                        Apoiar projectos de concepção e desenvolvimento de aplicações, incluindo estudos de viabilidade económica de pequenas dimensões.
+                    </p>
+                    <br>
+                    <p>
+                        Proteção da cabeça;
+                        Proteção visual e facial;
+                        Proteção auditiva;
+                        Proteção respiratória;
+                        Proteção de mãos e braços;
+                        Proteção de pernas e pés;
+                        Proteção contra quedas.
+                    </p>
+                    <div class="comment-box">
+
+                        <h3>Deixa seu comentário</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="text" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Seu comentário"></textarea>
+                            <button type="submit" class="hero-btn red-btn">Submeter</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="estagio-right">
+                    <h3>Áreas de Estágios</h3>
+                    <div>
+                        <span>Construção Civil</span>
+                        <span>1</span>
+                    </div>
+                    <div>
+                        <span>Informática</span>
+                        <span>2</span>
+                    </div>
+                    <div>
+                        <span>Electricidade</span>
+                        <span>3</span>
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+        <!-----------  footer ----------->
+        <section class="footer">
+            <h4>Sobre Nós</h4>
+            <p>
+                Empresa de referência e de melhor opção que responde as necessidades da sociedade 
+                <br>de forma moderna, efeciente, competitiva e orientada ao mercado. 
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-copyright"></i>Compass Engenharia</p>
+        </section>
+        <!-----------  Javascript code --------->  
+        <script>
+            var navLinks = document.getElementById("navlinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
